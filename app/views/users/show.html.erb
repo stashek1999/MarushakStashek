@@ -1,9 +1,28 @@
-<p><%= link_to "Home", root_path %></p>
+<div class="menu"><p style="color:black;"><%= link_to "Додому", root_path %></p>
 
 
-<h1>Hello, <%= @user.firstname %>!</h1>
-<p> Here is your params</p>
+<h1>Привіт, <%= @user.firstname %>!</h1>
+<p> Це твої параметри :</p>
 <%= @user.firstname %></br>
 <%= @user.lastname %></br>
 <%= @user.email %></br>
-<p><%= link_to "Edit Profile", edit_user_path %></p>
+<p><%= link_to "Змінити профіль", edit_user_path %></p>
+</div>
+
+<style>
+	
+	body{
+		background-image: url(http://dmauto-s.ru/img/wqewqerwer.jpg);
+		width: 100%;
+
+	}
+
+	.menu{
+		text-align: center;
+		font-style: italic;
+		color: white;
+		font-size: 18px;
+	}
+
+
+</style>
